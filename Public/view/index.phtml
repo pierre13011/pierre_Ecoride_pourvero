@@ -22,12 +22,12 @@
 
                 <div class="container form-date-from form-icon">
                     <label for="date_from">Date de départ</label>
-                    <input type="date" id="date_from" class="date_from hasDatePicker rounded-pill">
+                    <input type="date" id="date_from" name="date_from" class="date_from hasDatePicker rounded-pill">
                 </div>
 
                 <div class="container form-time">
                     <label for="time_from">Heure de départ</label>
-                    <input type="time" id="currentTime" class="time_from rounded-pill">
+                    <input type="time" id="time_from" name="time_from" class="time_from rounded-pill">
                 </div>
 
                 <div class=" container form-quantity">
@@ -35,9 +35,13 @@
                     <input type="number" name="quantity" id="quantity" value="0" min="0"  class="input-text qty text rounded-pill">
                 </div>
 
-                <div class="form-submit">
-                    <a href="covoiturage.php" id="submit" class="btn btn-danger">Reserver</a>      
+                <div class="form-submit">               
+                    <button type="submit" class="btn btn-danger">
+                        <a href="covoiturage.php">Réserver</a>  
+                    </button>    
                 </div>
+
+
             </form>
         </div>
 
@@ -67,7 +71,6 @@
             </div>
         </div>
 
-        <hr>
     </main>
     
 <?php include __DIR__ . '/footer.phtml'; ?>

@@ -12,18 +12,18 @@
 
 * {
     box-sizing: border-box;
+    margin:0;
+    padding: 0;
 }
 
-html,body {
-  scroll-behavior: smooth;
+html,body { 
+  scroll-behavior: smooth; 
   height: 100%;
-  margin: 0;
-  padding: 0;
+  background-color: var(--gt-color-primary);
+  font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: var(--gt-color-primary);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -45,20 +45,22 @@ a:active {
 }
 
 main, section {
-
     background-color: var(--gt-color-primary);
 }
 
 
+/* ##################################################################### */
+/* ################################ FOOTER ############################# */
+/* ##################################################################### */
+
+
 footer {
   text-align: center;
-  margin-bottom: auto;
   padding: 2em;
   background-color:#000;
   color: #fff;
-
+  margin-bottom: auto;
 }
-
 
 
 
@@ -67,15 +69,9 @@ footer {
 /* ##################################################################### */
 
 
-
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color:var(--gt-color-primary);
-}
-
 form {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -95,12 +91,13 @@ button {
 }
 
 .card {
-  text-align: center;
+
   background: var(--gt-color-warm);
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   padding: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .info {
@@ -161,8 +158,6 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
   background-image: url("../../Public/img/iceland.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -244,23 +239,46 @@ footer {
 /* ############################################################## */
 
 @media (max-width: 768px) {
-  .booking-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
 
-  .booking-form input[type="text"],
-  .booking-form input[type="date"],
-  .booking-form input[type="number"],
-  .booking-form input[type="submit"] {
-    max-width: 100%;
-  }
+    /* Header */
+    .main__header {
+        height: 350px;
+        padding: 20px;
+    }
 
-  header {
-    padding: 1em;
-  }
+    /* Formulaire du header */
+    .booking-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
 
-  .card {
-    font-size: 14px;
-  }
+    .booking-form input {
+        max-width: 100%;
+    }
+
+    /* Formulaire recherche */
+    form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Cartes */
+    .card {
+        font-size: 14px;
+    }
+
+    .info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+    }
 }
+
+
+
+
