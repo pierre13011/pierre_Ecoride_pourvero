@@ -6,28 +6,28 @@ export default class CovoiturageModel {
         date: "2025-10-10", 
         heureDepart: "08:00", 
         heureArrivee: "12:00", 
-        chauffeur: { nom: "Alice", note: 4.8, photo: "../Doc/img/ai_woman.png" }, places: 2, prix: 25, voitureElectrique: true },
+        chauffeur: { nom: "Alice", note: 4.8, photo: "../Public/img/ai_woman.png" }, places: 2, prix: 25, voitureElectrique: true },
 
       { depart: "Paris", 
         arrivee: "Lille", 
         date: "2025-10-10", 
         heureDepart: "09:00", 
         heureArrivee: "11:30", 
-        chauffeur: { nom: "Bob", note: 4.5, photo: "../Doc/img/man.jpg" }, places: 1, prix: 18, voitureElectrique: false },
+        chauffeur: { nom: "Bob", note: 4.5, photo: "../Public/img/man.jpg" }, places: 1, prix: 18, voitureElectrique: false },
 
       { depart: "Paris", 
         arrivee: "Marseille", 
         date: "2025-11-07", 
         heureDepart: "08:00", 
         heureArrivee: "12:00", 
-        chauffeur: { nom: "Sophie", note: 3.8, photo: "../Doc/img/ai_woman.png" }, places: 2, prix: 25, voitureElectrique: false },
+        chauffeur: { nom: "Sophie", note: 3.8, photo: "../Public/img/ai_woman.png" }, places: 2, prix: 25, voitureElectrique: false },
 
       { depart: "Montpelier", 
         arrivee: "Toulon", 
         date: "2025-12-01", 
         heureDepart: "06:00", 
         heureArrivee: "08:30", 
-        chauffeur: { nom: "Claude", note: 4.5, photo: "../Doc/img/man.jpg" }, places: 1, prix: 18, voitureElectrique: true }  
+        chauffeur: { nom: "Claude", note: 4.5, photo: "../Public/img/man.jpg" }, places: 1, prix: 18, voitureElectrique: true }  
     ];
   }
   rechercherTrajets(depart, arrivee, date) {

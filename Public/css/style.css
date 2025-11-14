@@ -10,7 +10,6 @@
     --gt-color-warm:#DD5C36;
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -154,10 +153,6 @@ img {
 /* ######################## HEADER DE L'ACCUEIL ######################## */
 /* ##################################################################### */
 
-header{
-  padding: 2em;
-}
-
 .main__header {
   position: relative;
   width: 100%;
@@ -168,7 +163,7 @@ header{
   justify-content: center;
 
 
-  background-image: url("../../Doc/img/iceland.jpg");
+  background-image: url("../../Public/img/iceland.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
